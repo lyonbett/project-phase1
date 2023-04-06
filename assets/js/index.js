@@ -58,20 +58,6 @@ card.append(img, beerName, likeButton);
 
 
 
-function search_name(name){
-  
-  fetch('https://api.punkapi.com/v2/beers?beer_name='+name)
-  .then(response=>response.json())
-  .then((list)=>{ console.log(list)})
-}
-
-function searchData(e){
-  e.preventDefault()
-  value = document.getElementById('beer_name').value;
-  search_name(value)
-}
-
-
 
 
 
