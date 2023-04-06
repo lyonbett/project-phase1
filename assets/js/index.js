@@ -7,7 +7,7 @@
     //implement getBeer
     const getBeer = () => {
       //fetch data from PUNK API
-      fetch(' https://api.punkapi.com/v2/beers?per_page=6')
+      fetch(' https://api.punkapi.com/v2/beers?per_page=80')
       //then grap the response and convert to JSON
       .then(resp => resp.json())
       //then render the beer data
