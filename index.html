@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>my project</title>
     <link rel="stylesheet" href="/assets/css/style.css" />
+    <link rel="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css"/>
+    
 </head>
 <body>
    <!--Heading-->
@@ -15,18 +17,14 @@
    
    <!--Search-->
    <div class="search-container">
-    <form class="beer-search">
+    <form onSubmit="searchData(event)" class="beer-search">
     <label for="beer-name">Search By Name: </label>
-    <input type="text" name="beer-name" id="beer-name">
+    <input type="text" name="beer-name" id="beer_name" placeholder="search...">
     <input type="submit">
    </form>
 </div>
    <!--Container of Items-->
-   <div class="item-container"></div>
-   <!--Buttons-->
-   <div class="bttn-container">
-    <button id="previous-page">Previous Page</button>
-    <button id="next-page">Next Page</button>
+   <div class="item-container">
    </div>
    <script src="./assets/js/index.js"></script>
 </body>

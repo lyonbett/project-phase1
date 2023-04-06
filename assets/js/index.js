@@ -41,3 +41,43 @@
       //invoke getBeer
       getBeer();
 })
+
+// create a like button element
+const likeButton = document.createElement('button');
+likeButton.className = 'like-button';
+likeButton.textContent = 'Like';
+
+// add event listener to like button
+likeButton.addEventListener('click', () => {
+  // perform some action when the like button is clicked
+  console.log('Liked beer:', beer.name);
+});
+
+// append like button to card container
+card.append(img, beerName, likeButton);
+
+
+
+function search_name(name){
+  
+  fetch('https://api.punkapi.com/v2/beers?beer_name='+name)
+  .then(response=>response.json())
+  .then((list)=>{ console.log(list)})
+}
+
+function searchData(e){
+  e.preventDefault()
+  value = document.getElementById('beer_name').value;
+  search_name(value)
+}
+
+
+
+
+
+
+
+
+
+
+

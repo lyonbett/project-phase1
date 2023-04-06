@@ -1,16 +1,17 @@
-body {background-color: purple;
+body {background-color: blue;
 }
 button, [type='submit']{
     background-color: green;
     color: aliceblue;
     font-weight: bold;
     border-radius: 40%;
-    padding: 10px 15px;
+    padding: 10px 35px;
 }
 .page-header img {
     display:block;
     margin: 0 auto;
     width: 21rem;
+    margin-bottom: 2%;
 }
 
 label {
