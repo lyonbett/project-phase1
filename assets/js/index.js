@@ -61,4 +61,4 @@ const renderBeer = beerArray => {
 document.addEventListener('DOMContentLoaded', () => {
   //invoke getBeer
   getBeer();
-}
+})
