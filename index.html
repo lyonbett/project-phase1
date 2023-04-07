@@ -6,8 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>my project</title>
     <link rel="stylesheet" href="/assets/css/style.css" />
-    
-</head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"></head>
 <body>
    <!--Heading-->
    <header class="page-header">
@@ -16,14 +15,16 @@
    
    <!--Search-->
    <div class="search-container">
-    <form onSubmit="searchData(event)" class="beer-search">
+    <form class="beer-search">
     <label for="beer-name">Search By Name: </label>
-    <input type="text" name="beer-name" id="beer_name" placeholder="search...">
-    <input type="submit">
+    <input type="text" name="beer-name" id="beer_name">
+    <input id="submit_btn" type="submit">
    </form>
 </div>
    <!--Container of Items-->
    <div class="item-container">
+   </div>
+
    </div>
    <script src="./assets/js/index.js"></script>
 </body>

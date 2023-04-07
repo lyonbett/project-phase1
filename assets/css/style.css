@@ -1,6 +1,6 @@
 body {background-color: blue;
 }
-button, [type='submit']{
+#submit_btn{
     background-color: green;
     color: aliceblue;
     font-weight: bold;
@@ -56,3 +56,27 @@ label {
 .bttn-container {
     text-align: center;
 }
+
+#like_button {
+    display: inline-block;
+   padding: 3px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 20px;
+    border: none;
+    background-color: black;
+    color: red;
+    cursor: pointer;
+  }
+   #like_button:hover {
+    background-color: #eee;
+  }
+  #like_button.clicked {
+    color: white;
+    background-color: red;
+  }
+  #like_button.clicked:before {
+    content: "\2764";
+    margin-right: 5px;
+  } 
