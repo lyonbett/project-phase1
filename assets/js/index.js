@@ -13,6 +13,27 @@ const getBeer = () => {
     //then render the beer data
     .then(renderBeer)
 }
+
+// define the new function to search for beers by name
+const searchBeer = (name) => {
+// fetch data from PUNK API with the beer name as a search parameter
+fetch(`https://api.punkapi.com/v2/beers?beer_name=${name}&per_page=80`)
+.then(resp => resp.json())
+.then(renderBeer)
+}
+
+// add an event listener to the form's "submit" event
+document.querySelector('form').addEventListener('submit', (event) => {
+  event.preventDefault();
+  // get the value of the input field
+  const searchTerm = document.querySelector('#beer-name').value;
+  // call the searchBeer function with the search term
+  searchBeer(searchTerm);
+})
+
+
+
+
 //implement renderBeer
 const renderBeer = beerArray => {
   //for each beer from fetch
