@@ -17,7 +17,7 @@ const getBeer = () => {
 // define the new function to search for beers by name
 const searchBeer = (name) => {
 // fetch data from PUNK API with the beer name as a search parameter
-fetch(`https://api.punkapi.com/v2/beers?beer_name=${name}&per_page=80`)
+  fetch(' https://api.punkapi.com/v2/beers?per_page=80')
 .then(resp => resp.json())
 .then(renderBeer)
 }
