@@ -12,7 +12,7 @@ const getBeer = () => {
     .then(resp => resp.json())
     //then render the beer data
     .then(renderBeer)
-
+}
 
 // define the new function to search for beers by name
 const searchBeer = (name) => {
